@@ -15,7 +15,6 @@
  */
 
 package com.hoangit.obt.crashScreen.views;
-
 import android.content.Context;
 import android.content.res.Resources;
 import android.graphics.Bitmap;
@@ -28,7 +27,6 @@ import java.util.ArrayList;
 import java.util.List;
 import static android.graphics.BitmapFactory.decodeResource;
 import static com.hoangit.obt.crashScreen.views.DesertPlaceholder.animationEnabled;
-
 public class CloudsView extends View {
 
   private static final float SPEED_DP_PER_SEC = 20f;
