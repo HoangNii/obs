@@ -1,0 +1,107 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_sky">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:paddingBottom="62dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/mountains"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/mountains" />
+
+    <View
+        android:layout_marginTop="-62dp"
+        android:layout_below="@+id/mountains"
+        android:id="@+id/desert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/background_desert" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-62dp"
+        android:layout_below="@+id/mountains"
+        android:background="@drawable/horizon_tiled"/>
+
+    <com.hoangit.obt.crashScreen.views.CloudsView
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/mountains"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:paddingTop="24dp"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:src="@drawable/sign_bed" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="48dp"
+        android:paddingTop="24dp"
+        android:src="@drawable/cactus_high" />
+
+    <com.hoangit.obt.crashScreen.views.TumbleweedView
+        android:paddingTop="24dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/tumbleweed"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:id="@+id/placeholder_message"
+        style="@style/PlaceHolder.Message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="48dp"
+        android:layout_below="@+id/mountains"
+        android:paddingRight="48dp"
+        android:text="Use this nice placeholder if you have nothing to show" />
+
+    <TextView
+        android:layout_below="@+id/placeholder_message"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/placeholder_button"
+        style="@style/PlaceHolder.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/placeholder_message"
+        tools:text="Retry"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:paddingBottom="24dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:src="@drawable/cactus" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/tumbleweed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/stone" />
+
+</RelativeLayout>
