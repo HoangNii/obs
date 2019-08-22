@@ -23,7 +23,9 @@ public class CrashActivity extends AppCompatActivity {
                 Intent launchIntent = getPackageManager().getLaunchIntentForPackage(ObConfig.get().getAppIdCrashScreenRestart(CrashActivity.this));
                 if (launchIntent != null) {
                     startActivity(launchIntent);
+                    finish();
                 }
+
             }
         });
     }

@@ -7,7 +7,7 @@
     android:background="@color/background_sky">
 
     <androidx.appcompat.widget.AppCompatImageView
-        android:paddingBottom="62dp"
+        android:paddingBottom="@dimen/_60mdp"
         android:layout_centerInParent="true"
         android:id="@+id/mountains"
         android:layout_width="wrap_content"
@@ -15,7 +15,7 @@
         android:src="@drawable/mountains" />
 
     <View
-        android:layout_marginTop="-62dp"
+        android:layout_marginTop="@dimen/mines60mdp"
         android:layout_below="@+id/mountains"
         android:id="@+id/desert"
         android:layout_width="wrap_content"
@@ -25,7 +25,7 @@
     <androidx.appcompat.widget.AppCompatImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="-62dp"
+        android:layout_marginTop="@dimen/mines60mdp"
         android:layout_below="@+id/mountains"
         android:background="@drawable/horizon_tiled"/>
 
@@ -35,14 +35,14 @@
         android:layout_alignParentTop="true"
         android:layout_above="@+id/mountains"
         android:layout_width="wrap_content"
-        android:layout_height="100dp" />
+        android:layout_height="@dimen/_100mdp" />
 
     <androidx.appcompat.widget.AppCompatImageView
-        android:paddingTop="24dp"
+        android:paddingTop="@dimen/_22mdp"
         android:layout_centerVertical="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="48dp"
+        android:layout_marginStart="@dimen/_44mdp"
         android:src="@drawable/sign_bed" />
 
     <androidx.appcompat.widget.AppCompatImageView
@@ -51,28 +51,28 @@
         android:layout_alignParentEnd="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="48dp"
-        android:paddingTop="24dp"
+        android:layout_marginEnd="@dimen/_46mdp"
+        android:paddingTop="@dimen/_22mdp"
         android:src="@drawable/cactus_high" />
 
     <com.hoangit.obt.crashScreen.views.TumbleweedView
-        android:paddingTop="24dp"
+        android:paddingTop="@dimen/_22mdp"
         android:layout_centerInParent="true"
         android:id="@+id/tumbleweed"
         android:layout_width="wrap_content"
-        android:layout_height="100dp" />
+        android:layout_height="@dimen/_100mdp" />
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:textSize="16sp"
+        android:textSize="@dimen/_12font_mdp"
         android:textColor="#fff"
         android:gravity="center"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="@dimen/_50mdp"
         android:id="@+id/placeholder_message"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingLeft="48dp"
+        android:paddingLeft="@dimen/_48mdp"
         android:layout_below="@+id/mountains"
-        android:paddingRight="48dp"
+        android:paddingRight="@dimen/_48mdp"
         android:text="Opps...Đại vương!" />
 
     <TextView
@@ -82,18 +82,18 @@
         style="@style/PlaceHolder.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="@dimen/_14mdp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/placeholder_message"
         tools:text="Retry"/>
 
     <androidx.appcompat.widget.AppCompatImageView
-        android:paddingBottom="24dp"
+        android:paddingBottom="@dimen/_22mdp"
         android:layout_alignParentBottom="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
+        android:layout_marginStart="@dimen/_30mdp"
         android:src="@drawable/cactus" />
 
     <androidx.appcompat.widget.AppCompatImageView
@@ -102,7 +102,7 @@
         android:layout_below="@+id/tumbleweed"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="@dimen/_14mdp"
         android:src="@drawable/stone" />
 
 </RelativeLayout>
