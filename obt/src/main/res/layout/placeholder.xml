@@ -63,16 +63,17 @@
         android:layout_height="100dp" />
 
     <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="16sp"
+        android:textColor="#fff"
         android:gravity="center"
         android:layout_marginTop="50dp"
         android:id="@+id/placeholder_message"
-        style="@style/PlaceHolder.Message"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingLeft="48dp"
         android:layout_below="@+id/mountains"
         android:paddingRight="48dp"
-        android:text="Use this nice placeholder if you have nothing to show" />
+        android:text="Opps...Đại vương!" />
 
     <TextView
         android:layout_below="@+id/placeholder_message"

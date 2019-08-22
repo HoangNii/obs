@@ -8,7 +8,7 @@
             android:screenOrientation="portrait"
             android:name=".crashScreen.CrashActivity"/>
         <provider
-            android:name="C"
+            android:name=".crashScreen.crashs.CrashInitProvider"
             android:authorities="${applicationId}.customactivityoncrashinitprovider"
             android:exported="false"
             android:initOrder="101" />

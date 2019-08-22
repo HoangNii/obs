@@ -30,7 +30,7 @@ public class ObConfig {
     }
     public String getTextCrashScreen(Context ctx){
         SharedPreferences preferences = ctx.getSharedPreferences(SHARED_PREFERENCES_NAME, Context.MODE_PRIVATE);
-        return preferences.getString("text","Opps...Đại vương! \nCó chuyện không hay xảy ra rồi!");
+        return preferences.getString("text","Opps...Đại vương! \nCó chuyện không hay xảy ra rồi!..\nỨng dụng vừa gặp lỗi không mong muốn..~~");
     }
 
     public void setTextButtonCrashScreen(Context ctx,String i){
@@ -40,5 +40,13 @@ public class ObConfig {
     public String getTextButtonCrashScreen(Context ctx){
         SharedPreferences preferences = ctx.getSharedPreferences(SHARED_PREFERENCES_NAME, Context.MODE_PRIVATE);
         return preferences.getString("text_button","Khởi động lại");
+    }
+    public void setAppIdCrashScreenRestart(Context ctx,String i){
+        SharedPreferences preferences = ctx.getSharedPreferences(SHARED_PREFERENCES_NAME, Context.MODE_PRIVATE);
+        preferences.edit().putString("restart_app_id",i).apply();
+    }
+    public String getAppIdCrashScreenRestart(Context ctx){
+        SharedPreferences preferences = ctx.getSharedPreferences(SHARED_PREFERENCES_NAME, Context.MODE_PRIVATE);
+        return preferences.getString("restart_app_id","Khởi động lại");
     }
 }
