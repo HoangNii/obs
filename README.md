@@ -19,7 +19,7 @@ PermissionManager.Builder()
                         .callback(new SmartCallback() {
                             @Override
                             public void result(boolean allPermissionsGranted, boolean somePermissionsDeniedForever) {
-                                Toast.makeText(MainActivity.this, PermissionEnum.GET_ACCOUNTS.toString() + ", " + PermissionEnum.ACCESS_FINE_LOCATION.toString() + ", " + PermissionEnum.READ_SMS.toString() + " allPermissionsGranted [" + allPermissionsGranted + "] somePermissionsDeniedForever [" + somePermissionsDeniedForever + "]", Toast.LENGTH_SHORT).show();
+                             
                             }
                         })
                         .ask(MainActivity.this);
