@@ -4,9 +4,10 @@ Obs full
 ObConfig =>
 
 //Permission
-PermissionManager.handleResult(this, requestCode, permissions, grantResults);
+```Java
+  PermissionManager.handleResult(this, requestCode, permissions, grantResults);
 
-PermissionManager.Builder()
+  PermissionManager.Builder()
                         .key(2100)
                         .permission(PermissionEnum.GET_ACCOUNTS, PermissionEnum.ACCESS_FINE_LOCATION, PermissionEnum.READ_SMS)
                         .askAgain(true)
@@ -24,3 +25,4 @@ PermissionManager.Builder()
                         })
                         .ask(MainActivity.this);
 
+```
