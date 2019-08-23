@@ -55,7 +55,7 @@ public class DesertPlaceholder extends FrameLayout {
     String buttonText = ObConfig.get().getTextButtonCrashScreen(getContext());
     setMessage(messageText);
     setButtonText(buttonText);
-    setBackgroundColor(getResources().getColor(R.color.orange_800));
+    setBackgroundColor(getResources().getColor(R.color.background_desert));
   }
 
   public void setOnButtonClickListener(OnClickListener clickListener) {
